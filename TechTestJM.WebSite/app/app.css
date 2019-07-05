@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.component {
+  align-content:center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  display:grid;
+  height:50%;
+}

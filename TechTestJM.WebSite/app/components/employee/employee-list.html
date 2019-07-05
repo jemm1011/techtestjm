@@ -1,0 +1,39 @@
+﻿<ui-view>
+    <div ng-controller="employeeCtrl as vm" class="component">
+        <h1>Employees</h1>
+        <div class="row">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Search By Id</span>
+                </div>
+                <input ng-model="vm.searchId" type="search" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+        </div>
+        <div class="row">
+            <div ng-init="vm.init()">
+                <div class="row">
+                    <div class="horizontal-scroll">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr class="black-muted-bg">
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Annual Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in vm.employeelist" class="no-top-border">
+                                    <td>{{item.id}}</td>
+                                    <td>{{item.name}}</td>
+                                    <td>{{item.role}}</td>
+                                    <td>{{item.annualSalary | currency:"$"}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ui-view>
