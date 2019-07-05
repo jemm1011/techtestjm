@@ -1,9 +1,9 @@
-# techtestjm
+# TechTestJM
 
 
-Technical Test Joaquin Mejia
+
 # Getting Started
-
+Technical Test Joaquin Mejia
 
 ## Prerequisites
 
