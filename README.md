@@ -1,7 +1,7 @@
 # techtestjm
 
 
-Technical Test
+Technical Test Joaquin Mejia
 # Getting Started
 
 
